@@ -1,0 +1,22 @@
+.grid {
+  display: grid;
+  grid-template-columns: repeat(10, 1fr);
+  grid-template-rows: repeat(10, 100px);
+  grid-gap: 10px;
+}
+
+.grid-item {
+  background-color: darkgrey;
+  border: 1px solid black;
+  text-align: center;
+  font-size: 40px;
+  transition: .2s;
+}
+
+.grid-item:hover {
+  background-color: red;
+  transform: scale(.8);
+  cursor: pointer;
+  border-radius: 8px;
+  transition: .2s;
+}
